@@ -8,7 +8,7 @@ const cascadiaMono = Cascadia_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Terminal Portfolio - Interactive Developer Portfolio",
+    title: "Samuel Cedric",
     description: "An interactive terminal-themed portfolio showcasing my work, skills, and experience",
 };
 
