@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Interactive Portfolio
+
+An interactive terminal-themed portfolio built with Next.js, React, and Tailwind CSS.
+
+## Tech Stack
+
+![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/tailwind%20css-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
+
+- Node.js (v22.x or later)
+- npm
+
+### Installation
+
+1. Clone the repo
+
+   ```sh
+   git clone https://github.com/cedrugs/interactive-portfolio.git
+   ```
+
+2. Install NPM packages
+
+   ```sh
+   npm install
+   ```
+
+3. Run the development server
+
+   ```sh
+   npm run dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The portfolio supports the following commands:
 
-## Learn More
+| Command      | Description                   |
+|--------------|-------------------------------|
+| `help`       | List all available commands   |
+| `about`      | Learn more about me           |
+| `experience` | View my work experience       |
+| `techstack`  | See my technical skills       |
+| `projects`   | Browse my portfolio projects  |
+| `contacts`   | Get my contact information    |
+| `cv`         | Download my CV/Resume         |
+| `clear`      | Clear the terminal screen     |
 
-To learn more about Next.js, take a look at the following resources:
+## Docker Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To deploy this application using Docker, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Build the Docker image:**
 
-## Deploy on Vercel
+    ```sh
+    docker build -t interactive-portfolio .
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Run the Docker container:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```sh
+    docker run -p 3000:3000 interactive-portfolio
+    ```
+
+Alternatively, you can use Docker Compose:
+
+1. **Build and run the services:**
+
+    ```sh
+    docker-compose up
+    ```
+
+The application will be available at [http://localhost:3000](http://localhost:3000).
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
